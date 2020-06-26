@@ -121,7 +121,7 @@ Thêm nữa, mỗi lần component bố được cập nhật, mọi thuộc tí
 
 Thường có 2 trường hợp lôi cuốn thay đổi một prop:
 
-1. **Prop được dùng để truyền vào giá trị khởi tạo, component con sau đó muốn dùng nó như thuộc tính local** Trong trường hợp này, tốt nhất là định nghĩa một thuộc tính local và dùng prop làm giá trị khởi tạo của nó:
+1. **Prop được dùng để truyền vào giá trị khởi tạo, component con sau đó muốn dùng nó như thuộc tính local.** Trong trường hợp này, tốt nhất là định nghĩa một thuộc tính local và dùng prop làm giá trị khởi tạo của nó:
 
   ``` js
   props: ['initialCounter'],
@@ -132,7 +132,7 @@ Thường có 2 trường hợp lôi cuốn thay đổi một prop:
   }
   ```
 
-2. **Prop được truyền đến với giá trị thô và cần biến đổi** Trong trường hợp này, tốt nhất là định nghĩa một thuộc tính computed sử dụng giá trị của prop:
+2. **Prop được truyền đến với giá trị thô và cần biến đổi.** Trong trường hợp này, tốt nhất là định nghĩa một thuộc tính computed sử dụng giá trị của prop:
 
   ``` js
   props: ['size'],
@@ -143,7 +143,6 @@ Thường có 2 trường hợp lôi cuốn thay đổi một prop:
   }
   ```
 
-<p class="tip">Note that objects and arrays in JavaScript are passed by reference, so if the prop is an array or object, mutating the object or array itself inside the child component **will** affect parent state.</p>
 <p class="tip">Lưu ý rằng Object và Array trong JavaScript được truyền bằng tham chiếu (pass by reference), nên nếu thay đổi prop là Array hay Object trong component con **sẽ** ảnh hưởng đến trạng thái của component bố.</p>
 
 ## Hợp lệ hóa Prop
@@ -195,7 +194,7 @@ Khi xác thực tính hợp lệ của prop không đúng yêu cầu, Vue sẽ b
 
 ### Xác thực loại dữ liệu
 
-`type` (loại dữ liệu) can be one of the following native constructors:
+`type` (loại dữ liệu) có thể là một trong những kiểu loại sau:
 
 - String
 - Number
